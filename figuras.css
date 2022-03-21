@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size:100%; 
+    line-height:1;
+}
+:root{
+    --pink-dark: #F4C1FF;
+    --pink-light: #F8DBFF;
+    --morado: #A776B3;
+    --green-dark: #92B364;
+    --green-light: #E5FFC2;
+    --titulo: 'Martel', serif;
+    --textos: 'Nokora', sans-serif;
+    --titulos: 'Cabin Condensed', sans-serif;
+}
+body {
+    background-color:var(--morado);
+    color:var(--pink-light);
+    letter-spacing: 2px;
+    width: 100%;
+    height:100%;
+    font-family: var(--textos);
+}
+.container__general{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:80%;
+    margin: 0 auto;
+    gap:50px;
+}
+h1{
+    font-family: var(--titulo);
+    font-size:3rem;
+    margin-top:20px;
+}
+p{
+    overflow:visible;
+    padding:5px;
+}
+h2{
+    font-family: var(--titulos);
+    font-size:2rem;
+    margin-bottom:10px;
+}
+header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+button{
+    background-color: var(--green-dark);
+    border-radius: 10px;
+    padding:8px;
+}
+button:hover{
+    background-color: var(--green-light);
+}
+form{
+    font-size:1rem;
+}
